@@ -1,0 +1,218 @@
+
+
+/* Navegación */
+
+#navegación {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:2rem ;
+    margin-right: 2rem;
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 1rem;
+  }
+
+ .logo{
+     margin-right: auto;
+     
+     font-family: 'Poppins', sans-serif;
+     font-size: 35px;
+ }
+
+ .art{
+     font-weight: 100;
+     font-size: small;
+     align-self: flex-start;
+ }
+
+ .nav{
+     font-size: 25px;
+ }
+
+    
+  .naveg{ 
+      font-size: 30px;
+   } 
+
+  .imagen{
+      background-image: url(../img/image-banner.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 25%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      margin-left: 0%;
+      margin-right:0% ;
+  }
+
+  #perfil{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      
+
+  }
+  .imgperfil{
+
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    
+
+  }
+
+  .nombre{
+      flex-grow: 1;
+      align-self: flex-end;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+
+  }
+  .nombre p{
+      font-weight:200 ;
+      font-size: 18px;
+      margin-top: 0%;
+
+  }
+
+  .botonUno{
+      padding-bottom: .10rem;
+      margin-left: 10px;
+      border-radius: 10%;
+      height: 2rem;
+      width: 6rem;
+      background-color: rgba(23, 90, 205, 0.629);
+      opacity: 2;
+      color: aliceblue;
+      border: 0ch;
+  }
+  .botonDos{
+    padding-bottom: .10rem;
+    margin-left: 10px;
+    border-radius: 10%;
+    height: 2rem;
+    width: 6rem;
+    background-color: rgba(239, 55, 23, 0.468);
+    color: aliceblue;
+    border: 0ch;
+}
+/* mobile first */
+.tarjetas{
+    display:grid;
+    grid-template-columns:minmax(200px, 1fr);
+    width:95%;
+    margin: 0 auto;
+    grid-row-gap: 10px;
+}
+
+.tarjeta{
+    border: 2px solid grey;
+ 
+    padding: 15px;
+}
+
+img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+.tarjeta-desc{
+    background-color:beige;
+    padding: 10px;
+    font-size: 1.125rem;
+}
+
+/* breakpoint sm, de 576px hacia arriba */
+@media (min-width:576px){
+    .tarjetas{
+        grid-template-columns: repeat(2, minmax(250px,1fr));
+        grid-gap: 20px;
+    }
+
+    .naveg{
+        order: 0;
+        font-size: 20px;
+    }
+
+    .nav{
+        font-size: 20px;
+    }
+    
+} 
+
+@media (max-width:576px){
+
+    .nav{
+        display: none;
+        
+    }
+    .navegación{
+        font-size: 30px;
+        align-items: center;
+    }
+
+    #perfil{
+       margin-left: 5rem;
+    
+        
+    }
+    .nombre{
+        align-self:flex-end;
+        font-size: 20px;
+        
+    }
+    .nombre p{
+        font-size: 18px;
+        margin-top: 0%
+    }
+
+
+
+    .botonUno{
+        display: none;
+        
+    }
+    .botonDos{
+        display: none;
+    }
+    
+}
+
+
+/* breakpoint md, de 768px hacia arriba */
+@media (min-width:768px){
+
+    .naveg{
+        order:4;
+    }
+    
+} 
+
+/* breakpoint lg, de 992px hacia arriba */
+@media (min-width:992px){
+   .tarjetas{
+        grid-template-columns: repeat(3, minmax(250px,1fr));
+   }
+
+   .naveg{
+       order: 4;
+   }
+} 
+
+/* breakpoint xl, de 1200px hacia arriba */
+@media (min-width:1200px){
+
+    .naveg{
+        order:4;
+    }
+    
+}     
