@@ -132,9 +132,23 @@ img {
   display: block;
 }
 .tarjeta-desc {
-  background-color: beige;
+
   padding: 10px;
   font-size: 1.125rem;
+}
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 0%;
+
+}
+.segunda{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin-top: 0%;
+
+    color: rgb(139, 161, 171);
 }
 
 /* breakpoint sm, de 576px hacia arriba */
